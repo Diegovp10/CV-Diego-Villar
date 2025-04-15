@@ -85,22 +85,25 @@ h2 {
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* Eliminar todos los marcadores de lista */
+ul, ol {
+    list-style-type: none;
+    padding-left: 1;
 }
 
 li {
-    margin: 0.5rem 0;
+    list-style-type: none;
+    margin: 0.8rem 0;
 }
 
-li ul {
-    padding-left: 1.5rem;
-    margin-top: 0.5rem;
+/* Para listas anidadas */
+li ul, li ol {
+    padding-left: 1.5rem; /* Mantenemos la indentación pero sin marcadores */
+    list-style-type: none;
 }
 
-li ul li {
-    margin: 0.3rem 0;
+li li {
+    list-style-type: none;
 }
 
 footer {
